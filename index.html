@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TJB Digital Foundry — Web, Design & Digital Growth for Local Businesses</title>
+  <meta name="description" content="TJB Digital Foundry is an American digital studio building websites, brands, and lead-generation systems for local businesses. Portfolio, pricing, and easy online booking.">
+  <link rel="canonical" href="https://tjbdigitalfoundry.com/">
+  <meta property="og:title" content="TJB Digital Foundry">
+  <meta property="og:description" content="Websites, design, consulting, and lead generation for local businesses. Proudly American-based.">
+  <meta property="og:url" content="https://tjbdigitalfoundry.com/">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "TJB Digital Foundry",
+    "url": "https://tjbdigitalfoundry.com",
+    "email": "tjb@tjbdigitalfoundry.com",
+    "areaServed": "United States",
+    "description": "Web development, design, consulting, and lead generation for local businesses."
+  }
+  </script>
+  <style>
+    :root{
+      --ink:#151a22;
+      --ink-soft:#4b5563;
+      --paper:#fbfaf7;
+      --card:#ffffff;
+      --brand:#0f4c5c;
+      --brand-dark:#0a3642;
+      --accent:#e36414;
+      --accent-soft:#fdf0e6;
+      --line:#e7e3da;
+      --radius:14px;
+      --shadow:0 2px 12px rgba(21,26,34,.07);
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
+    h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.15}
+    img{max-width:100%;display:block}
+    a{color:var(--brand)}
+    .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+    section{padding:72px 0}
+    .kicker{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+    .section-title{font-size:clamp(1.7rem,3.5vw,2.4rem);margin-bottom:14px}
+    .section-sub{color:var(--ink-soft);max-width:640px;margin-bottom:40px}
+
+    /* Nav */
+    header{position:sticky;top:0;z-index:50;background:rgba(251,250,247,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+    .logo{font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none}
+    .logo span{color:var(--accent)}
+    .nav-links{display:flex;gap:26px;align-items:center;list-style:none}
+    .nav-links a{text-decoration:none;color:var(--ink-soft);font-size:.92rem;font-weight:500}
+    .nav-links a:hover{color:var(--brand)}
+    .btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:600;font-size:.95rem;text-decoration:none;transition:transform .15s ease, box-shadow .15s ease}
+    .btn:hover{transform:translateY(-1px);box-shadow:var(--shadow)}
+    .btn-primary{background:var(--brand);color:#fff}
+    .btn-accent{background:var(--accent);color:#fff}
+    .btn-ghost{border:1.5px solid var(--line);color:var(--ink);background:var(--card)}
+    .nav-toggle{display:none;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--ink)}
+
+    /* Hero */
+    .hero{padding:90px 0 80px;background:linear-gradient(180deg,#f4f1ea 0%,var(--paper) 100%)}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+    .hero h1{font-size:clamp(2.2rem,5vw,3.4rem);margin-bottom:20px}
+    .hero h1 em{font-style:normal;color:var(--accent)}
+    .hero p{color:var(--ink-soft);font-size:1.08rem;max-width:520px;margin-bottom:30px}
+    .hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+    .hero-badges{display:flex;gap:18px;margin-top:34px;flex-wrap:wrap}
+    .badge{font-size:.82rem;color:var(--ink-soft);display:flex;align-items:center;gap:7px}
+    .badge::before{content:"✓";color:var(--accent);font-weight:700}
+    .hero-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:28px}
+    .hero-card h3{font-size:1.05rem;margin-bottom:8px}
+    .hero-card p{font-size:.9rem;color:var(--ink-soft);margin-bottom:18px}
+    .hero-card .mini{font-size:.8rem;color:var(--ink-soft);margin-top:14px;margin-bottom:0}
+
+    /* Services */
+    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+    .svc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px}
+    .svc .icon{width:42px;height:42px;border-radius:10px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin-bottom:16px}
+    .svc h3{font-size:1.02rem;margin-bottom:8px}
+    .svc p{font-size:.88rem;color:var(--ink-soft)}
+
+    /* Portfolio */
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .work{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+    .work .thumb{aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:1.3rem;color:#fff;text-align:center;padding:16px}
+    .t1{background:linear-gradient(135deg,#0f4c5c,#1b7a8c)}
+    .t2{background:linear-gradient(135deg,#e36414,#f0932b)}
+    .t3{background:linear-gradient(135deg,#3d405b,#5f6caf)}
+    .t4{background:linear-gradient(135deg,#2a9d8f,#57c5b6)}
+    .t5{background:linear-gradient(135deg,#9a348e,#c95f9f)}
+    .t6{background:linear-gradient(135deg,#4a4e69,#7d8597)}
+    .work .body{padding:20px 22px 24px}
+    .work .tag{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+    .work h3{font-size:1.05rem;margin:6px 0 8px}
+    .work p{font-size:.88rem;color:var(--ink-soft)}
+
+    /* Pricing */
+    .pricing{background:#f4f1ea}
+    .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch}
+    .plan{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;display:flex;flex-direction:column;position:relative}
+    .plan.featured{border:2px solid var(--brand);box-shadow:var(--shadow)}
+    .plan .flag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--brand);color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.06em;padding:4px 14px;border-radius:999px;white-space:nowrap}
+    .plan h3{font-size:1.1rem;margin-bottom:4px}
+    .plan .for{font-size:.83rem;color:var(--ink-soft);margin-bottom:16px}
+    .plan .price{font-family:'Fraunces',serif;font-size:2rem;font-weight:700;margin-bottom:2px}
+    .plan .per{font-size:.8rem;color:var(--ink-soft);margin-bottom:20px}
+    .plan ul{list-style:none;margin-bottom:26px;flex:1}
+    .plan li{font-size:.89rem;color:var(--ink-soft);padding:7px 0 7px 26px;position:relative;border-bottom:1px dashed var(--line)}
+    .plan li::before{content:"✓";position:absolute;left:2px;color:var(--accent);font-weight:700}
+    .plan .btn{text-align:center}
+    .price-note{text-align:center;font-size:.85rem;color:var(--ink-soft);margin-top:26px}
+
+    /* Booking */
+    .book-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+    .book-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+    .book-card h3{font-size:1.1rem;margin-bottom:10px}
+    .book-card p{font-size:.9rem;color:var(--ink-soft);margin-bottom:18px}
+    .embed-shell{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff}
+    .embed-shell iframe{display:block;width:100%;border:0}
+
+    /* About */
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+    .about p{color:var(--ink-soft);margin-bottom:14px}
+    .stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .stat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;text-align:center}
+    .stat .n{font-family:'Fraunces',serif;font-size:1.7rem;font-weight:700;color:var(--brand)}
+    .stat .l{font-size:.8rem;color:var(--ink-soft)}
+
+    /* Contact */
+    .contact{background:var(--ink);color:#eef0f3}
+    .contact .section-title{color:#fff}
+    .contact .section-sub{color:#b9c0cb}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+    .contact a{color:#ffd9b8}
+    .contact ul{list-style:none}
+    .contact li{padding:8px 0;font-size:.95rem}
+
+    footer{background:var(--ink);color:#8b93a1;border-top:1px solid #2a3140;padding:26px 0;font-size:.83rem}
+    .foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+    @media(max-width:900px){
+      .grid-4{grid-template-columns:repeat(2,1fr)}
+      .grid-3{grid-template-columns:repeat(2,1fr)}
+      .hero-grid,.about-grid,.book-grid,.contact-grid{grid-template-columns:1fr}
+      .price-grid{grid-template-columns:1fr;max-width:460px;margin:0 auto}
+    }
+    @media(max-width:640px){
+      .grid-3,.grid-4{grid-template-columns:1fr}
+      .nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:var(--paper);flex-direction:column;padding:18px 24px;border-bottom:1px solid var(--line);gap:14px}
+      .nav-links.open{display:flex}
+      .nav-toggle{display:block}
+      section{padding:56px 0}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">TJB <span>Digital Foundry</span></a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+    <ul class="nav-links" id="navlinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="btn btn-accent" href="#book">Book a Call</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="kicker">American-based digital studio</span>
+        <h1>Websites, brands & <em>lead generation</em> built for local businesses.</h1>
+        <p>TJB Digital Foundry designs, builds, and grows the digital presence your business deserves — from a site that converts to campaigns that bring customers through the door.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#book">Book a free consult</a>
+          <a class="btn btn-ghost" href="#work">See the work</a>
+        </div>
+        <div class="hero-badges">
+          <span class="badge">U.S.-based</span>
+          <span class="badge">Transparent pricing</span>
+          <span class="badge">No agency bloat</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3>Free 30-minute strategy call</h3>
+        <p>Tell me about your business. I'll tell you exactly what I'd build, what it costs, and what results to expect. No pressure, no jargon.</p>
+        <a class="btn btn-accent" href="#book">Pick a time →</a>
+        <p class="mini">Booked directly on my calendar — you'll get an instant confirmation from tjb@tjbdigitalfoundry.com.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <span class="kicker">Services</span>
+      <h2 class="section-title">Everything a local business needs to win online.</h2>
+      <p class="section-sub">Four core disciplines under one roof — so your website, brand, strategy, and marketing actually work together.</p>
+      <div class="grid-4">
+        <div class="svc"><div class="icon">💻</div><h3>Web & Software Development</h3><p>Fast, modern websites and custom tools built to convert visitors into customers — mobile-first, SEO-ready.</p></div>
+        <div class="svc"><div class="icon">🎨</div><h3>Design & Creative</h3><p>Logos, brand identity, and UI/UX that make your business look as professional as it is.</p></div>
+        <div class="svc"><div class="icon">🧭</div><h3>Consulting & Advisory</h3><p>Straightforward digital strategy: where to invest, what to skip, and how to measure what matters.</p></div>
+        <div class="svc"><div class="icon">📈</div><h3>Marketing & Lead Generation</h3><p>Content, SEO, and local campaigns that put your business in front of nearby customers who are ready to buy.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="work" style="padding-top:0">
+    <div class="wrap">
+      <span class="kicker">Portfolio</span>
+      <h2 class="section-title">Selected work.</h2>
+      <p class="section-sub">A sample of recent projects. <!-- TODO: Replace these six placeholder cards with real projects — swap the gradient .thumb divs for <img> screenshots. --></p>
+      <div class="grid-3">
+        <div class="work"><div class="thumb t1">Riverside Dental</div><div class="body"><span class="tag">Web Development</span><h3>Practice website + online booking</h3><p>New patient bookings up 40% in 90 days with a redesigned site and local SEO foundation.</p></div></div>
+        <div class="work"><div class="thumb t2">Hearth & Home Realty</div><div class="body"><span class="tag">Lead Generation</span><h3>Local lead engine</h3><p>Landing pages and geo-targeted campaigns delivering 25+ qualified seller leads per month.</p></div></div>
+        <div class="work"><div class="thumb t3">Summit Fitness Co.</div><div class="body"><span class="tag">Brand & Design</span><h3>Full rebrand</h3><p>Logo, identity system, and signage for a growing three-location gym.</p></div></div>
+        <div class="work"><div class="thumb t4">Lakeside Law Group</div><div class="body"><span class="tag">Consulting</span><h3>Digital strategy roadmap</h3><p>A 12-month plan that cut wasted ad spend 30% and doubled consultation requests.</p></div></div>
+        <div class="work"><div class="thumb t5">Bloom Floral Studio</div><div class="body"><span class="tag">E-commerce</span><h3>Online ordering launch</h3><p>Same-day delivery ordering built into a refreshed brand site — 200+ orders in month one.</p></div></div>
+        <div class="work"><div class="thumb t6">Anchor HVAC</div><div class="body"><span class="tag">Marketing & Content</span><h3>Content + review system</h3><p>Automated review requests and monthly content driving a #1 local map-pack ranking.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="pricing">
+    <div class="wrap">
+      <span class="kicker">Pricing</span>
+      <h2 class="section-title">Simple, transparent pricing.</h2>
+      <p class="section-sub">Flat-rate projects and month-to-month growth plans. No long contracts, no surprise invoices. <!-- TODO: Adjust these placeholder prices to your real rates. --></p>
+      <div class="price-grid">
+        <div class="plan">
+          <h3>Launch</h3>
+          <p class="for">For businesses that need a professional site, fast.</p>
+          <div class="price">$1,500</div>
+          <p class="per">one-time project</p>
+          <ul>
+            <li>5-page custom website</li>
+            <li>Mobile-first, SEO-ready build</li>
+            <li>Contact form + booking integration</li>
+            <li>Google Business Profile setup</li>
+            <li>2 weeks of post-launch support</li>
+          </ul>
+          <a class="btn btn-ghost" href="#book">Start with Launch</a>
+        </div>
+        <div class="plan featured">
+          <span class="flag">Most popular</span>
+          <h3>Grow</h3>
+          <p class="for">For businesses ready to turn their site into a lead machine.</p>
+          <div class="price">$750<span style="font-size:1rem;font-weight:400">/mo</span></div>
+          <p class="per">month-to-month, cancel anytime</p>
+          <ul>
+            <li>Everything in Launch</li>
+            <li>Local SEO + content (2 posts/mo)</li>
+            <li>Lead-gen landing pages</li>
+            <li>Review & reputation management</li>
+            <li>Monthly performance report</li>
+          </ul>
+          <a class="btn btn-primary" href="#book">Start with Grow</a>
+        </div>
+        <div class="plan">
+          <h3>Scale</h3>
+          <p class="for">For established businesses that want a fractional digital team.</p>
+          <div class="price">$1,950<span style="font-size:1rem;font-weight:400">/mo</span></div>
+          <p class="per">month-to-month, cancel anytime</p>
+          <ul>
+            <li>Everything in Grow</li>
+            <li>Paid ads management (Google/Meta)</li>
+            <li>Email marketing & automation</li>
+            <li>Quarterly strategy sessions</li>
+            <li>Priority same-day support</li>
+          </ul>
+          <a class="btn btn-ghost" href="#book">Start with Scale</a>
+        </div>
+      </div>
+      <p class="price-note">Need something custom — branding, consulting, or a one-off project? <a href="#book">Book a call</a> and we'll scope it together.</p>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="book">
+    <div class="wrap">
+      <span class="kicker">Book a call</span>
+      <h2 class="section-title">Grab time on my calendar.</h2>
+      <p class="section-sub">Pick any open slot — it syncs straight to my Google Calendar and you'll get an automatic confirmation and reminder.</p>
+      <div class="book-grid">
+        <div class="book-card">
+          <h3>Schedule an appointment</h3>
+          <p>Free 30-minute consult. Choose a time that works for you:</p>
+          <!-- TODO (STEP 1 in the setup guide): Replace the src below with YOUR Google Calendar appointment-scheduling embed.
+               Google Calendar → Create → Appointment schedule → Share → Embed. -->
+          <div class="embed-shell">
+            <iframe src="https://calendar.google.com/calendar/appointments/schedules/REPLACE_WITH_YOUR_SCHEDULE_ID?gv=true" style="height:600px" title="Book an appointment with TJB Digital Foundry"></iframe>
+          </div>
+        </div>
+        <div class="book-card">
+          <h3>My availability at a glance</h3>
+          <p>A read-only view of my working calendar (busy times hidden for privacy):</p>
+          <!-- TODO (STEP 2 in the setup guide): Replace the src below with YOUR public calendar embed.
+               Google Calendar → Settings → your calendar → Integrate calendar → Embed code.
+               Set "Access permissions" to public with "See only free/busy". -->
+          <div class="embed-shell">
+            <iframe src="https://calendar.google.com/calendar/embed?src=tjb%40tjbdigitalfoundry.com&mode=WEEK&showTitle=0&showPrint=0&showTabs=0&showCalendars=0" style="height:600px" title="TJB Digital Foundry availability calendar"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" style="padding-top:0">
+    <div class="wrap about-grid">
+      <div class="about">
+        <span class="kicker">About</span>
+        <h2 class="section-title">Built in America. Focused on Main Street.</h2>
+        <p>TJB Digital Foundry is an independent, American-based digital studio. No offshore handoffs, no account-manager runaround — you work directly with the person building your project.</p>
+        <p>The mission is simple: give local businesses the same caliber of web presence, branding, and lead generation the big chains pay agencies six figures for — at prices that make sense for Main Street.</p>
+        <p><!-- TODO: Add your personal bio, photo, and location here. --></p>
+      </div>
+      <div class="stat-grid">
+        <div class="stat"><div class="n">100%</div><div class="l">U.S.-based work</div></div>
+        <div class="stat"><div class="n">Direct</div><div class="l">You work with the founder</div></div>
+        <div class="stat"><div class="n">Flat</div><div class="l">Transparent pricing</div></div>
+        <div class="stat"><div class="n">0</div><div class="l">Long-term contracts</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <span class="kicker">Contact</span>
+      <h2 class="section-title">Let's talk about your business.</h2>
+      <p class="section-sub">Fastest way: book a call above. Otherwise, reach out directly.</p>
+      <div class="contact-grid">
+        <ul>
+          <li>📧 <a href="mailto:tjb@tjbdigitalfoundry.com">tjb@tjbdigitalfoundry.com</a></li>
+          <li>📅 <a href="#book">Book a free 30-minute consult</a></li>
+          <li>📍 United States <!-- TODO: add city/state if you want local SEO benefit --></li>
+        </ul>
+        <div>
+          <p style="color:#b9c0cb;font-size:.92rem">Prefer email? Send a short note about your business and what you're trying to accomplish — you'll get a reply within one business day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="yr"></span> TJB Digital Foundry. All rights reserved.</span>
+    <span>An American-based digital studio · tjbdigitalfoundry.com</span>
+  </div>
+</footer>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
